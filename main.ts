@@ -18,6 +18,10 @@ grove.onJoystick(GroveJoystickKey.UL, AnalogPin.P0, AnalogPin.P1, function () {
     basic.showArrow(ArrowNames.NorthWest)
     radio.sendString("AvG")
 })
+input.onButtonPressed(Button.B, function () {
+    basic.showIcon(IconNames.No)
+    radio.sendString("B")
+})
 grove.onJoystick(GroveJoystickKey.LL, AnalogPin.P0, AnalogPin.P1, function () {
     basic.showArrow(ArrowNames.SouthWest)
     radio.sendString("ArG")
