@@ -1,5 +1,13 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showString("A")
+    radio.sendString("A")
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showString("A+B")
+    radio.sendString("A+B")
+})
 input.onButtonPressed(Button.B, function () {
-    basic.showIcon(IconNames.No)
+    basic.showString("B")
     radio.sendString("B")
 })
 let Groupe = 1
